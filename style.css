@@ -16,6 +16,21 @@
     display: inline-block;
     width: 100%;
   }
+
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    border-bottom: 1px solid white;
+    margin-right: 20px; /* Adjust the spacing between items as needed */
+    cursor: pointer;
+    transition: color 0.3s; /* Add a smooth transition effect for color changes */
+  }
+  
+  nav ul li:hover {
+    color: yellowgreen; /* Change the text color on hover to your desired color */
+  }
+  
   
   header ul {
     margin: 20px 0 0 0;
@@ -86,7 +101,7 @@
   footer {
     background-color: #211a1d;
     color: #ffffff;
-    width: 100%;
+    width: auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -166,7 +181,7 @@
     margin-bottom: 1em;
     
   }
-  }
+  
   
   .card a {
     text-decoration: underline;
@@ -205,8 +220,17 @@
   /*Membership*/
   
   .membership {
+    text-align: center; /* Center-align the text within the section */
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 700px; /* Limit the section width */
+  }  
+
+  .membership p {
+    /* Center-align the paragraph horizontally */
     text-align: center;
-    background-color: #fffffc;
+    width: 100%; /* Make the paragraph full width within the section */
+    margin-bottom: 5%;
+    padding-right: 0; /* Remove padding-right */
   }
   
   .membership h2 {
@@ -227,4 +251,19 @@
     width: 25%;
     text-align: right;
     float: right;
+  }
+  .bears img{
+    display: inline-block;
+    margin-left: 100px;
+  }
+
+  .news {
+    
+    display: flex;
+    flex-direction: row; /* Optional, it's the default value for flex-direction */
+  }
+  .news cards{
+    border: 1px solid #ccc;
+  padding: 10px;
+  margin-right: 10px
   }
